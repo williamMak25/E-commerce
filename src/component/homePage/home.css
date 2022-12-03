@@ -1,0 +1,42 @@
+.container{
+    display: grid;
+    grid-template-rows:  auto auto auto;
+    row-gap: 5px;
+    grid-template-columns: auto auto auto;
+    column-gap: 5px;
+    padding-top: 70px;
+}
+.items__container{
+   width: 100%;
+   align-items: center;
+   padding: 10px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   border-radius: 10px;
+}
+.items__container:hover{
+    box-shadow: 2px 2px 12px rgb(180, 168, 168);
+    cursor: pointer;
+}
+img{
+    width: 100px;
+    height: 120px;
+    margin-bottom: 5px;
+}
+.title{
+    font-size: 17px;
+    text-shadow: 5px 5px 4px rgb(150, 146, 146);
+}
+.price{
+    font-size: 12px;
+    font-weight: bolder;
+    text-shadow: 5px 5px 4px rgb(150, 146, 146);
+
+}
+.allItemBtn{
+    border-radius: 10px;
+    border: none;
+    box-shadow: 5px 5px 10px rgb(212, 209, 209);
+}

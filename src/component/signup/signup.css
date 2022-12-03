@@ -1,0 +1,51 @@
+.signUp__container{
+    padding: 100px;
+    display: flex;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    justify-content: center;
+}
+.signup__form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.name__container input:nth-of-type(1){
+    margin-right: 20px;
+}
+.email__container{
+    width: 100%;
+}
+.password__container{
+    width: 100%;
+}
+.email__container input{
+    width: 100%;
+}
+.password__container input{
+    display: block;
+    width: 100%;
+}
+label{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: larger;
+    font-weight: bolder;
+}
+#name{
+    display: block;
+    font-size: larger;
+}
+.signup__btn{
+    margin-top: 20px;
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+}
+.remake{
+    margin-top: 20px;
+}
+.remake p,a{
+    display: inline;
+}
+.remake a{
+    margin-left: 5px
+}

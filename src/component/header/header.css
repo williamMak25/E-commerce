@@ -1,0 +1,47 @@
+.header_container{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    padding-left: 0px;
+    background-color: #454545;
+    position: fixed;
+    width: 100%;
+    border: none;
+    box-shadow: 5px 5px 10px rgb(123, 118, 118);
+    padding: 5px;
+}
+.content{
+    width: 20%;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+}
+.content a{
+    text-decoration: none;
+    color: inherit;
+}
+.searchBar{
+    width: 70%;
+}
+.category{
+    display: flex;
+    color: white;
+    justify-content: space-around;
+}
+.category li{
+    list-style: none;
+    font-size: 20px;
+}
+.category a{
+    text-decoration: none;
+    color: white;
+}
+.cart{
+    width: 10%;
+}
+.bi-cart3{
+    width: 30px;
+    height: 40px;
+    margin-left: 40% ;
+
+}

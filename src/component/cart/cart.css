@@ -1,0 +1,21 @@
+.cart__container{
+    padding-top: 70px;
+}
+.cart_title{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.cart_title tr{
+    font-size: 20px;
+    border-bottom: 2px solid black;
+    display: inline;
+    width: 100%;
+}
+.cart_title tr:nth-child(1){
+    border-right: 2px solid black;
+}
+.cart_title tr:nth-child(2){
+    border-right: 2px solid black;
+}
