@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { NavLink, useParams } from "react-router-dom";
-import { addItems } from "../../redux/slice";
+import { addItems } from "../cart/slice";
 import './itemDetail.css';
 
 
 const ItemDetail = () => {
     const {id} = useParams()
     const [itemDetail,setItemDetail] = useState([])
-    const dispatch = useDispatch
+    
      useEffect(()=>{
         fetch(`https://fakestoreapi.com/products/${id}`)
         .then(res=>{
@@ -16,10 +16,10 @@ const ItemDetail = () => {
         })
         .then(data=>{
             setItemDetail(data);
-            console.log(data)
         })
     },[id])
-    const targetToadd = (itemDetail) =>{
+    const dispatch = useDispatch()
+    const addItemsHandaler = ( ) => {
         dispatch(addItems(itemDetail))
     }
     return(
@@ -31,8 +31,9 @@ const ItemDetail = () => {
                 <p className="item_category">Category - <span>{itemDetail.category}</span></p>
                 <h1 className="item_description">{itemDetail.description}</h1>
                 <p className="item_price">$ {itemDetail.price}</p>
-                <button onClick={() => targetToadd(itemDetail)}>Add Cart</button>
+                <button onClick={() =>  addItemsHandaler(itemDetail)}>Add Cart</button>
                <NavLink to="/cart"><button>Go to Cart</button></NavLink>
+               <NavLink to="/"><button>Go to Home</button></NavLink>
             </div>
         </div>
         </>

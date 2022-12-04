@@ -6,7 +6,6 @@ import { NavLink } from 'react-router-dom';
 const Home = () => {
 
     const [apidata,setApidata] = useState([]);
-    console.log(apidata)
     useEffect(()=>{
         fetch('https://fakestoreapi.com/products')
         .then((res)=>{
