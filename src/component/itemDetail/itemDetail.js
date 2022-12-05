@@ -33,7 +33,7 @@ const ItemDetail = () => {
                 <p className="item_price">$ {itemDetail.price}</p>
                 <button onClick={() =>  addItemsHandaler(itemDetail)}>Add Cart</button>
                <NavLink to="/cart"><button>Go to Cart</button></NavLink>
-               <NavLink to="/"><button>Go to Home</button></NavLink>
+               <NavLink to="/"><button>Go back to shop</button></NavLink>
             </div>
         </div>
         </>

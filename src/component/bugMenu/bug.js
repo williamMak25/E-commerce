@@ -31,8 +31,8 @@ const Bug = () => {
             </div>
             <div className={menuClass}>
                 <div className="content_container">
-                <NavLink to='/login' className='login_tag'><span onClick={handleClick} style={{border:"none"}}>Log In</span></NavLink>
-                <NavLink to='/signup'className='signup_tag'><span onClick={handleClick} style={{border:"none"}}>Sign Up</span></NavLink>
+                <NavLink to='/login' className='login_tag'><span onClick={handleClick} style={{border:"none"}}>LogIn</span></NavLink>
+                <NavLink to='/signup'className='signup_tag'><span onClick={handleClick} style={{border:"none"}}>SignUp</span></NavLink>
                 </div>
             </div>
         </div>

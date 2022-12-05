@@ -17,13 +17,17 @@
 }
 .item_title{
     font-size: 20px;
-    text-align: start;
-    color: rgb(132, 73, 73);
-    background-color: rgb(209, 199, 199);
+    text-align: center;
+    color: rgb(73, 103, 132);
+    background-color:lightblue;
     padding: 5px;
     border-radius: 10px;
     border: none;
     box-shadow: 5px 5px 10px rgb(182, 174, 174);
+    width: 50%;
+}
+.item_category,.item_description,.item_price{
+    background-color: lightblue;
 }
 .item_description{
     font-size: 17px;
@@ -44,15 +48,17 @@
     width: 10%;
 }
 .item_category{
-    text-align: start;
+    text-align: center;
     border-radius: 10px;
     border: none;
     box-shadow: 5px 5px 10px rgb(152, 147, 147);
     padding: 5px;
+    width: 20%;
 }
 .item_content button{
     margin: 5px;
     border-radius: 10px;
     border: none;
-    box-shadow: 5px 5px 10px rgb(212, 209, 209);
+    box-shadow: 5px 5px 10px rgb(198, 193, 193);
+    background-color: rgb(215, 218, 221);
 }

@@ -46,7 +46,7 @@ const Cart = ( ) => {
                         <h3 className="products-name">Products</h3>
                         <h3 className="price-name">Price</h3>
                         <h3 className="quantity">Quantity</h3>
-                        <h3 className="total">total</h3>
+                        <h3 className="total">Total</h3>
                     </div>
 
                     <div className="cart-items">
