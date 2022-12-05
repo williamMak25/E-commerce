@@ -69,6 +69,7 @@
     text-align: left;
     width: 25%;
     text-align: center;
+    color: green;
 }
 .cart-productQuantity{
     width: 30%;
@@ -85,4 +86,25 @@
 }
 .totoal-price{
     width:25%;
+    color: green;
+}
+.subtotal{
+    margin: 50px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+}
+.checkOut{
+    color: green;
+}
+.checkOut button{
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: rgb(215, 218, 221);
+    border-radius: 5px;
 }

@@ -1,14 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 import './cart.css'
-import { removeItems } from "./slice";
+import { removeItems,addItems,addItemQuantity, getTotal} from "./slice";
 
 const Cart = ( ) => {
-      const cart = useSelector( (state) => state.addItems )
+      const cart = useSelector( (state) => state.addItems ) // <----this useSelector calling state from the store
+      
       const dispatch = useDispatch()
+       
+      useEffect(()=>{
+            dispatch(getTotal())
+        },[cart]);
+
       const handaleRemooveItems = (cartitem)=> {
         dispatch(removeItems(cartitem))
+        dispatch(getTotal())
+      }
+      const addItemsHandaler = ( cartitem) => {
+          dispatch(addItems(cartitem))
+          dispatch(getTotal())
+      }
+      const reduceCartQuantity = (cartitem) => {
+        dispatch(addItemQuantity(cartitem))
+        dispatch(getTotal())
       }
     return(
         <>
@@ -46,20 +61,27 @@ const Cart = ( ) => {
                                     </div>
                                 </div>
 
-                                 <div className="cart-productPrice">{cartitem.price}</div>
+                                 <div className="cart-productPrice">$ {cartitem.price}</div>
 
                                 <div className="cart-productQuantity">
-                                    <button>-</button>
+                                    <button onClick={()=>reduceCartQuantity(cartitem)}>-</button>
                                     <div className="count">{cartitem.itemQuantity}</div>
-                                    <button>+</button>
+                                    <button onClick={()=>addItemsHandaler(cartitem)}>+</button>
                                 </div>
 
                                 <div className="totoal-price">
-                                    {cartitem.price * cartitem.itemQuantity}
+                                   $ {cartitem.price * cartitem.itemQuantity}
                                 </div>
                             </div>})}
                     </div>
                 </>) }
+                <div className="subtotal">
+                   <h2> Your total-amount for Products - $ {cart.cartTotalAmount}</h2>
+                    <div className="checkOut">
+                        <p>If you're done, your shopping list. Please checkout here</p>
+                        <button>Check Out</button>
+                    </div>
+                </div>
         </div>
         </>
         
