@@ -1,121 +1,7 @@
 
 
 
-@media all and (min-width:415px)  and (min-height:640px){
-.bug__container{
-    height: 100%;  
-    width: 4em;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    cursor: pointer ;
-    margin-left: 5px;
-}
-.burger-bar {
-    width: 2.5em;
-    height: 0.2em ;
-    background-color:white;
-    border-radius: 0.5em;
-    margin: 5px;
-}
-.menu{
-    width: 15%;
-    height:100vh;
-    background-color:rgb(255, 255, 255);
-    position: absolute;
-    box-shadow: 2px 2px 20px black;
-    z-index: -1;
-    top: 60px;
-    left: 5px;
-   border-radius: 10px;
-}
-.hidden{
-    display: none;
-}
-.visible{
-    display: inherit;
-}
-.burger-bar.clicked:nth-child(1){
-    transform: rotate(90deg) translate(13px,15px);
-    transition: ease-in 0.5s;
-}
-.burger-bar.clicked:nth-child(2){
-    transform: rotate(90deg);
-    transition: ease-in 0.5s;
-}
-.burger-bar.clicked:nth-child(3){
-    transform: rotate(90deg) translate(-13px,-15px);
-    transition: ease-in 0.5s;
-}
-.burger-bar .unclicked {
-    transform: rotate(0) translate(0);
-    transition: ease-in 1s;
-}
-.content_container{
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-.content_container a{   
-    text-decoration: none;
-    text-align: center;
-    font-size: 15px;
-    color:black;
-}
-.login_tag{
-    margin: 5px;
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 10px;
-    padding: 5px;
-    background-color: rgb(215, 218, 221);
-}
-.signup_tag{
-    margin: 5px;
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 10px;
-    padding: 5px;
-    background-color: rgb(215, 218, 221);
-}
-.men{
-    margin: 5px;
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 10px;
-    padding: 5px;
-    background-color: rgb(215, 218, 221);
-    text-align: center;
-}
-.jewelery{
-    margin: 5px;
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 10px;
-    padding: 5px;
-    background-color: rgb(215, 218, 221);
-    text-align: center;
-}
-.electronics{
-    margin: 5px;
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 10px;
-    padding: 5px;
-    background-color: rgb(215, 218, 221);
-    text-align: center;
-}
-.women{
-    margin: 5px;
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 10px;
-    padding: 5px;
-    background-color: rgb(215, 218, 221);
-    text-align: center;
-}
-}
+
 .bug__container{
     height: 100%;  
     width: 20px;
@@ -235,3 +121,122 @@
     background-color: rgb(215, 218, 221);
     text-align: center;
 }
+@media all and (min-width:415px) {
+    .bug__container{
+        height: 100%;  
+        width: 4em;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        cursor: pointer ;
+        margin-left: 5px;
+        margin-top: 2px;
+    }
+    .burger-bar {
+        width: 2.5em;
+        height: 0.2em ;
+        background-color:white;
+        border-radius: 0.5em;
+        margin: 5px;
+    }
+    .menu{
+        width: 15%;
+        height:100vh;
+        background-color:rgb(255, 255, 255);
+        position: absolute;
+        box-shadow: 2px 2px 20px black;
+        z-index: -1;
+        top: 60px;
+        left: 5px;
+       border-radius: 10px;
+    }
+    .hidden{
+        display: none;
+    }
+    .visible{
+        display: inherit;
+    }
+    .burger-bar.clicked:nth-child(1){
+        transform: rotate(90deg) translate(16px,15px);
+        transition: ease-in 0.5s;
+    }
+    .burger-bar.clicked:nth-child(2){
+        transform: rotate(90deg);
+        transition: ease-in 0.5s;
+        opacity: 1;
+        width: 30px;
+        height: 5px;
+    }
+    .burger-bar.clicked:nth-child(3){
+        transform: rotate(90deg) translate(-13px,-15px);
+        transition: ease-in 0.5s;
+    }
+    .burger-bar .unclicked {
+        transform: rotate(0) translate(0);
+        transition: ease-in 1s;
+    }
+    .content_container{
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .content_container a{   
+        text-decoration: none;
+        text-align: center;
+        font-size: 15px;
+        color:black;
+    }
+    .login_tag{
+        margin: 5px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 10px;
+        padding: 5px;
+        background-color: rgb(215, 218, 221);
+    }
+    .signup_tag{
+        margin: 5px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 10px;
+        padding: 5px;
+        background-color: rgb(215, 218, 221);
+    }
+    .men{
+        margin: 5px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 10px;
+        padding: 5px;
+        background-color: rgb(215, 218, 221);
+        text-align: center;
+    }
+    .jewelery{
+        margin: 5px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 10px;
+        padding: 5px;
+        background-color: rgb(215, 218, 221);
+        text-align: center;
+    }
+    .electronics{
+        margin: 5px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 10px;
+        padding: 5px;
+        background-color: rgb(215, 218, 221);
+        text-align: center;
+    }
+    .women{
+        margin: 5px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 10px;
+        padding: 5px;
+        background-color: rgb(215, 218, 221);
+        text-align: center;
+    }
+    }

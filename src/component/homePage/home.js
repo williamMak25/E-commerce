@@ -2,6 +2,7 @@ import React from 'react'
 import './home.css'
 import { useEffect ,useState} from "react";
 import { NavLink } from 'react-router-dom';
+import { SkeletonTheme } from 'react-loading-skeleton';
 
 const Home = () => {
 
@@ -15,9 +16,10 @@ const Home = () => {
         .then((data)=>{
           setApidata(data)
         })
-      },[])
+      },[apidata])
 
  return(
+    <SkeletonTheme baseColor='#454545'>
      <div className='container'>
     {apidata.map((items)=>{
         return(
@@ -32,6 +34,7 @@ const Home = () => {
         )
     })}
     </div>
+    </SkeletonTheme>
  )
 }
 

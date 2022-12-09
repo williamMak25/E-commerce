@@ -3,7 +3,7 @@
     padding-top: 100px;
     padding-bottom: 100px;
     justify-content: center;
-    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    background-image:white;
 }
 .login__form{
     padding: 50px;
@@ -47,5 +47,27 @@
         flex-direction: column;
         width: 100%;
         align-items: center;
+    }
+    .login__form h1{
+        font-size: 15px;
+    }
+    .email__container label{
+        font-size: 12px;
+        font-weight: normal;
+    }
+    .password__container label{
+        font-weight: normal;
+        font-size: 12px;
+    }
+    .login__form button{
+        height: 20px;
+        border: 0.5px solid rgb(209, 205, 205);
+        font-size: 12px;
+    }
+    .remaketwo p{
+        font-size: 12px;
+    }
+    .remaketwo a{
+        font-size: 12px;
     }
 }

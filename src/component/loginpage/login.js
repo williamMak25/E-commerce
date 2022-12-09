@@ -11,11 +11,11 @@ const Login = () => {
                 <h1>Log In Your Account</h1>
             <div className="email__container">
                 <label>Email</label>
-                <input type='email' placeholder="Email"/>
+                <input type='email'/>
             </div>
             <div className="password__container">
                 <label>Passsword</label>
-                <input type='password' placeholder="Passsword"/>  
+                <input type='password'/>  
             </div>
             <button>Log In</button>
             <div className="remaketwo">

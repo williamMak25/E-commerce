@@ -11,7 +11,7 @@ const Cart = ( ) => {
        
       useEffect(()=>{
             dispatch(getTotal())
-        },[cart]);
+        },[dispatch]);
 
       const handaleRemooveItems = (cartitem)=> {
         dispatch(removeItems(cartitem))
