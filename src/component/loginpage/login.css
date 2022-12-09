@@ -38,3 +38,14 @@
 .remaketwo p,a{
     display: inline;
 }
+
+@media all and (max-width:414px){
+
+    .login__form{
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+}

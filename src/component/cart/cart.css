@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 100px ;
+    padding-top: 100px ;
     width: 100%;
 }
 .cart__container h1{
@@ -16,7 +16,7 @@
     text-decoration: none;
     color: black;
 }
-/*for title content */
+/*for title content*/
 .titles{
     display: flex;
     justify-content: space-around;
@@ -25,6 +25,7 @@
     text-align: center;
     background-color: lightblue;
     border-radius: 5px;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 .products-name{
@@ -59,8 +60,7 @@
     padding: 5px;
     align-items: center;
     margin-top: 20px;
-    border-bottom: 2px solid lightblue;
-    border-top: 2px solid lightblue;
+
 }
 .cart-product{
     width: 25%;
@@ -121,4 +121,155 @@
     border: none;
     background-color: rgb(215, 218, 221);
     border-radius: 5px;
+}
+@media all and (max-width:414px) {
+    .cart__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-top: 50px;
+    }
+    .cart__container h1{
+        font-size: 20px;
+    }
+    .cart-empty h2{
+        color: rgb(135, 199, 221);
+        text-align: center;
+    }
+    .start-shopping{
+        margin-top: 50px;
+    }
+    .start-shopping a{
+        text-decoration: underline;
+        color: black;
+    }
+    .start-shopping svg{
+        width: 60px;
+        height: 60px;
+    }
+    .titles{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        text-align: center;
+        background-color: lightblue;
+        margin: 5px;
+        padding: 5px;
+        align-items: center;
+    }
+    .products-name{
+        margin-left: 20px;
+        width: 100%;
+        height: 10px;
+        font-size: 10px;
+    }
+    .price-name{
+        margin-left: 20px;
+        width: 100%;
+        height: 10px;
+        font-size: 10px;
+    }
+    .quantity{
+        margin-left: 20px;
+        width: 100%;
+        height: 10px;
+        font-size: 10px;
+        padding-right: 0px;
+    }
+    .total{
+        margin-left: 20px;
+        width: 100%;
+        height: 10px;
+        font-size: 10px;
+    }
+    .cart-items{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: rgb(245, 252, 253);
+    }
+    .cart-item{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        text-align: center;
+        padding: 5px;
+        align-items: center;
+        border-bottom: 1px solid lightblue;
+    }
+    .cart-product{
+        width: 25%;
+    }
+    .cart-product img{
+        width: 50px;
+        height: 50px;
+        margin: 0;
+    }
+    .cart-title h2{
+        font-size: 7px;
+        margin-top: 5px;
+    }
+    .cart-title button {
+        width: 30px;
+        height: 10px;
+        font-size: 9px;
+        border: none;
+    }
+    .cart-productPrice{
+        text-align: left;
+        width: 30px;
+        text-align: center;
+        color: green;
+        font-size: 10px;
+        margin-right: 15px;
+    }
+    .cart-productQuantity{
+        width: 50px;
+        display: flex;
+        justify-content: row;
+        height: 25% ;
+        justify-content: space-around;
+        font-size: 10px;
+        margin-right: 10px;
+    }
+    .count{
+        font-size: 9px;
+     }
+    .cart-productQuantity button{
+        width: 20%;
+        border: 1px solid rgb(213, 197, 197);
+        border-radius: 5px;
+
+    }
+    .totoal-price{
+        font-size: 10px;
+        margin-right: 15px;
+    }
+    .subtotal{
+        margin: 50px auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        
+    }
+    
+    .subtotal h2{
+        font-size: 18px;
+    }
+    .checkOut{
+        color: green;
+        font-size: 12px;
+    }
+    .checkOut button{
+        display: block;
+        width: 100%;
+        border: none;
+        background-color: rgb(215, 218, 221);
+        border-radius: 5px;
+    }
 }

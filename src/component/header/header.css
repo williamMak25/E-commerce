@@ -1,6 +1,65 @@
+  
 .header_container{
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    padding: 0px;
+    background-color: #454545;
+    position: fixed;
+    border: none;
+    width: 360px;
+    box-shadow: -5px 5px 10px rgb(123, 118, 118);
+}
+.content{
+    width:60px;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    padding: 2px;
+    margin-top: 8px;
+    margin-left: 5px;
+}
+.content a{
+    text-decoration: none;
+    color: inherit;
+}
+.content a h3{
+    font-size: 9px;
+}
+.searchBar{
+    width: 230px;
+    padding-left: 10px;
+    padding-right: 0px;
+}
+.searchBar li{
+    list-style: none;
+    font-size: 7px;
+    margin: 4px;
+    margin-left: 5px;
+    display: inline;
+    text-align: center;
+}
+.searchBar a{
+    text-decoration: none;
+    color: white;
+}
+.cart{
+    width: 50px;
+    padding: 0;
+}
+.bi-cart3{
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    margin-right: 0px;
+    margin-top: 2px;
+
+}
+
+@media all and (min-width:415px) {
+    
+.header_container{
+    display: flex;
+    justify-content:space-between;
     padding: 5px;
     padding-left: 0px;
     background-color: #454545;
@@ -14,25 +73,27 @@
     width: 20%;
     text-align: center;
     color: white;
+    padding-left: 20px;
     font-weight: bolder;
 }
 .content a{
     text-decoration: none;
     color: inherit;
 }
+.content a h3{
+    font-size: 25px;
+    text-align: center;
+}
 .searchBar{
     width: 70%;
+    text-align: center;
 }
-.category{
-    display: flex;
-    color: white;
-    justify-content: space-around;
-}
-.category li{
+.searchBar li{
     list-style: none;
     font-size: 20px;
+    margin-left: 50px;
 }
-.category a{
+.searchBar a{
     text-decoration: none;
     color: white;
 }
@@ -40,8 +101,12 @@
     width: 10%;
 }
 .bi-cart3{
-    width: 30px;
+    width: 50px;
     height: 40px;
-    margin-left: 40% ;
+    margin-left: 20% ;
+    margin-top: 0;
 
 }
+}
+
+

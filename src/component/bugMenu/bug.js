@@ -33,6 +33,10 @@ const Bug = () => {
                 <div className="content_container">
                 <NavLink to='/login' className='login_tag'><span onClick={handleClick} style={{border:"none"}}>LogIn</span></NavLink>
                 <NavLink to='/signup'className='signup_tag'><span onClick={handleClick} style={{border:"none"}}>SignUp</span></NavLink>
+                    <span className="men" onClick={handleClick}><NavLink to="/category/men's clothing">Men's clothing</NavLink></span>
+                    <span className="jewelery" onClick={handleClick}><NavLink to="/category/jewelery">Jewelery</NavLink></span>
+                    <span className="electronics" onClick={handleClick}><NavLink to="/category/electronics">Electronics</NavLink></span>
+                    <span className="women" onClick={handleClick}><NavLink to="/category/women's clothing">Women's clothing</NavLink></span>
                 </div>
             </div>
         </div>

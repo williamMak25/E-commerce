@@ -76,7 +76,7 @@ const Cart = ( ) => {
                     </div>
                 </>) }
                 <div className="subtotal">
-                   <h2> Your total-amount for Products - $ {cart.cartTotalAmount}</h2>
+                   <h2> Your total-amount for Products - {cart.cartTotalAmount} $</h2>
                     <div className="checkOut">
                         <p>If you're done, your shopping list. Please checkout here</p>
                         <button>Check Out</button>

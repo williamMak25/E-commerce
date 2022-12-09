@@ -35,3 +35,12 @@ img{
 .allItemBtn{
     border-radius: 10px;
 }
+@media all and (max-width:414px){
+    
+.secContainer{
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+}
+
+}
