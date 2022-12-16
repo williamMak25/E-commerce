@@ -18,6 +18,7 @@ const Header = () => {
                     <li><NavLink to="/category/jewelery">Jewelery</NavLink></li>
                     <li><NavLink to="/category/electronics">Electronics</NavLink></li>
                     <li><NavLink to="/category/women's clothing">Women's clothing</NavLink></li>
+                    <li><NavLink to="/profile">Profile</NavLink></li>
             </div>
             <div className="cart">
                 <Link to="/cart"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="white" className="bi bi-cart3" viewBox="0 0 16 16">

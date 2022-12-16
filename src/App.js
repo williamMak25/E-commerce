@@ -10,12 +10,14 @@ import Home from './component/homePage/home';
 import ItemDetail from './component/itemDetail/itemDetail';
 import Login from './component/loginpage/login';
 import Signup from './component/signup/signup';
+import { Profile } from './component/profile/profile';
 
 
 function App() {
 
   return (
-    <div className="App">
+    <div className='App'>
+    
     <BrowserRouter>
     <ToastContainer/>
      <Header/>
@@ -24,10 +26,12 @@ function App() {
       <Route path='/cart' element={<Cart/>}/>
       <Route path='/login' element={<Login/>}/>
       <Route path='/signup' element={<Signup/>}/>
+      <Route path='/profile' element={<Profile/>}/>
       <Route path='/products/:id' element={<ItemDetail/>}/>
       <Route path='/category/:type' element={<Category/>}/>
      </Routes>
     </BrowserRouter>
+    
     </div>
   );
 }

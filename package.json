@@ -10,6 +10,7 @@
     "axios": "^1.2.0",
     "bootstrap": "^5.2.3",
     "bootstrap-icons": "^1.10.2",
+    "firebase": "^9.15.0",
     "get-google-fonts": "^1.2.2",
     "react": "^18.2.0",
     "react-bootstrap": "^2.6.0",
@@ -36,15 +37,13 @@
     ]
   },
   "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "webpack-cli": "^5.0.1"
   }
 }
